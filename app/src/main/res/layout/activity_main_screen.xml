@@ -31,7 +31,7 @@
             android:layout_marginRight="90sp"
             android:layout_marginLeft="90sp"
             android:layout_marginBottom="20sp"
-            android:text="One Player "
+            android:text="One Player"
             android:textSize="30sp"/>
 
     </LinearLayout>
@@ -50,10 +50,10 @@
             app:autoSizeMaxTextSize="100sp"
             app:autoSizeStepGranularity="2sp"
             android:layout_weight="1"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="90dp"
-            android:layout_marginLeft="90dp"
-            android:layout_marginBottom="120sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="90sp"
+            android:layout_marginLeft="90sp"
+            android:layout_marginBottom="180sp"
             android:text="Two Player"
             android:textSize="30sp"/>
 
