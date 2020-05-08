@@ -2,6 +2,7 @@ package com.example.ultimatetictactoe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +17,8 @@ public class MainGame extends AppCompatActivity implements View.OnClickListener 
 
     private int round_count;
 
+    private int numPlayers;
+
     private int player1Points;
     private int player2Points;
 
@@ -25,7 +28,11 @@ public class MainGame extends AppCompatActivity implements View.OnClickListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_game);
+
+        // Get the number of players
+        Intent intent = getIntent();
+        numPlayers = intent.getIntExtra("players", 0);
 
         textView_player1 = findViewById(R.id.text_view_p1);
         textView_player2 = findViewById(R.id.text_view_p2);
