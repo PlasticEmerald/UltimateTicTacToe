@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button[][] main_buttons = new Button[3][3];
 
@@ -85,8 +85,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (round_count == 9) {
             // The game has been tied
             gameEnd(0);
+        } else {
+            player1Turn = !player1Turn;
         }
-        player1Turn = !player1Turn;
     }
 
     /*
